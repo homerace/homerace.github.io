@@ -395,7 +395,6 @@ function generateShareLink() {
 
 function lineupNumber(number) {
   const rowsRankLists = {
-    2: [1,1],
     3: [1,2],
     4: [2,2],
     5: [2,3],
@@ -405,8 +404,7 @@ function lineupNumber(number) {
     9: [1,3,5],
     10:[1,2,3,4],
     11:[1,2,3,5],
-    12:[1,2,4,5],
-    13:[1,3,4,5]
+    12:[1,2,4,5]
   }
   const VALID = Object.hasOwn(rowsRankLists, number);
   if (VALID == true) {
