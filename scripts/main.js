@@ -406,7 +406,7 @@ function lineupNumber(number) {
     10:[1,2,3,4],
     11:[1,2,3,5],
     12:[1,2,4,5],
-    18:[1,2,4,5,6]
+    13:[1,3,4,5]
   }
   const VALID = Object.hasOwn(rowsRankLists, number);
   if (VALID == true) {
