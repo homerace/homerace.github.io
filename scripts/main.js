@@ -262,7 +262,7 @@ const abbreviatedNationalities = {
 function populateRankingEntry(trainee, currRank) {
   let modifiedNationality = trainee.birthyear;
   let eliminated = (showEliminated && trainee.eliminated) && "eliminated";
-  let top8 = (showTop8 && trainee.top8) && "top8";
+  let top6 = (showTop6 && trainee.top6) && "top6";
   const rankingEntry = `
   <div class="ranking__entry ${eliminated}">
     <div class="ranking__entry-view">
@@ -272,7 +272,7 @@ function populateRankingEntry(trainee, currRank) {
       </div>
       <div class="ranking__entry-icon-badge bg-${trainee.grade.toLowerCase()}">${currRank}</div>
       ${
-        top8 ? '<div class="ranking__entry-icon-crown"></div>' : ''
+        top6 ? '<div class="ranking__entry-icon-crown"></div>' : ''
       }
     </div>
     <div class="ranking__row-text">
